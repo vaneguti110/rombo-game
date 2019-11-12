@@ -1,0 +1,14 @@
+.board button {
+  width: 60px;
+  height: 60px;
+  background-color: gray;
+  /* transform rotate is to make rombo shape*/
+  transform: rotate(45deg);
+  border: 4px solid black; /*this gets rid of bootstrap shadow*/
+  margin: 10px;
+}
+
+body {
+  font-family: 'Shadows Into Light', cursive;
+  /*font-weight: 20px strong; */
+}
