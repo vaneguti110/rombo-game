@@ -31,6 +31,7 @@ function checkBottom(colIndex) {
   var colorReport = returnColor(5,colIndex);
   for (var row = 5; row > -1; row--) {
     colorReport = returnColor(row,colIndex);
+    //'rgb(128, 128, 128)' is grey
     if (colorReport === 'rgb(128, 128, 128)') {
       return row
     }
@@ -118,7 +119,7 @@ $('.board button').on('click',function() {
   // Get back bottom available row to change
   var bottomAvail = checkBottom(col);
 
-  // Drop the chip in that column at the bottomAvail Row
+  // Drop the rombo in that column at the bottomAvail Row
   changeColor(bottomAvail,col,currentColor);
 
   // Check for a win or a tie.
